@@ -1,5 +1,5 @@
 FROM baseimage
-#COPY . /opt/appcloud
-WORKDIR /appcloud
+COPY . /opt/appcloud
+WORKDIR /opt/appcloud
 RUN chmod +x entrypoint.sh
-ENTRYPOINT ["/appcloud/entrypoint.sh"]
+ENTRYPOINT ["/opt/appcloud/entrypoint.sh"]
